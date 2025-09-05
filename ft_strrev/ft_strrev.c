@@ -13,7 +13,7 @@ char    *ft_strrev(char *str)
 {
     if (!str)
         return (NULL);
-    char    *tmp = malloc(sizeof(char) * ft_strlen(str) + 1);
+    char    *tmp = malloc(sizeof(char) * (ft_strlen(str) + 1));
     if (!tmp)
         return NULL;
     int i = ft_strlen(str) - 1;
