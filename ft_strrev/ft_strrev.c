@@ -11,6 +11,8 @@ int ft_strlen(char *str)
 
 char    *ft_strrev(char *str)
 {
+    if (!str)
+        return (NULL);
     char    *tmp = malloc(sizeof(char) * ft_strlen(str) + 1);
     if (!tmp)
         return NULL;
