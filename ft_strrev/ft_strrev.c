@@ -1,6 +1,4 @@
 #include <stdlib.h>
-#include <stdio.h>
-#include <unistd.h>
 
 int ft_strlen(char *str)
 {
@@ -20,11 +18,7 @@ char    *ft_strrev(char *str)
     int j = 0;
 
     while (i >= 0)
-    {
-        tmp[j] = str[i];
-        j++;
-        i--;
-    }
+        tmp[j++] = str[i--];
     tmp[j] = 0;
     return (tmp);
 }
